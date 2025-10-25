@@ -4,3 +4,5 @@ https://gemini.google.com/share/b67650a35c9d
 priority - 1
 ## this is the project i choose to show in my samester project 
 with team members ANSHUL VERMA , ANIRUDH RATURI
+## we have to use Complete NLP to build this project 
+

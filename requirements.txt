@@ -2,7 +2,7 @@ fastapi == 0.117.1
 uvicorn == 0.37.0
 librosa == 0.11.0
 numpy == 1.26.4
-torch == 2.2.0
-torchvision == 0.17.0
+torch == 2.0.0
+torchvision == 0.15.1
 soundfile == 0.13.1
 python-multipart == 0.0.20

@@ -106,7 +106,12 @@ def preprocess_audio(file_bytes):
     y, sr = decode_audio_to_wav(file_bytes)
 
     # Ensure 3 seconds of audio
-    y = librosa.util.fix_length(y, 16000 * 3)
+    # y = librosa.util.fix_length(y, 16000 * 3)
+    # Ensure 3 seconds of audio
+
+    # new
+    y = librosa.util.fix_length(data=y, size=16000 * 3)
+
 
     # Mel spectrogram
     mel = librosa.feature.melspectrogram(

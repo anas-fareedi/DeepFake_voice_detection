@@ -4,7 +4,7 @@ import os
 
 def audio_to_mel(path):
     y, sr = librosa.load(path, sr=16000)
-    y = librosa.util.fix_length(data=y, size=16000 * 3)  # fixed 3 sec
+    y = librosa.util.fix_length(data=y, size=16000 * 3)
     mel = librosa.feature.melspectrogram(y=y, sr=sr, n_mels=128)
     mel_db = librosa.power_to_db(mel, ref=np.max)
     return mel_db

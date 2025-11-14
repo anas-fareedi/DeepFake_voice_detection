@@ -15,7 +15,6 @@ class MelDataset(Dataset):
     def __getitem__(self, idx):
         mel = np.load(self.paths[idx])
         
-        # mel = torch.tensor(mel).unsqueeze(0).float()
         mel = torch.from_numpy(np.asarray(mel, dtype=np.float32)).unsqueeze(0)
 
         label = torch.tensor(self.labels[idx]).long()

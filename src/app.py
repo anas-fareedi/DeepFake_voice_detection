@@ -5,9 +5,10 @@ from src.predict_utils import predict_from_audio
 app = FastAPI()
 
 # Enable CORS for your JS frontend
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],       # you can restrict this later
+    allow_origins=["*"],       
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

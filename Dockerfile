@@ -9,13 +9,11 @@ RUN apt-get update && apt-get install -y \
 
 COPY requirements.txt .
 
-# Upgrade pip
 RUN pip install --upgrade pip
 
 # Install all Python packages (Torch CPU)
 RUN pip install --no-cache-dir --extra-index-url https://download.pytorch.org/whl/cpu -r requirements.txt
 
-# Copy everything else
 COPY . .
 
 # Run FastAPI on port 10000 (Render requirement)

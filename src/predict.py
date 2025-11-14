@@ -4,7 +4,6 @@ import librosa
 from model import DeepfakeDetector
 import sys
 
-# ----- Load Model -----
 model_path = "models/deepfake_detector.pth"
 model = DeepfakeDetector()
 model.load_state_dict(torch.load(model_path, map_location="cpu"))
@@ -19,9 +18,8 @@ def audio_to_mel(path):
     mel_db = librosa.power_to_db(mel, ref=np.max)
 
     mel_db = np.asarray(mel_db, dtype=np.float32)
-    mel_db = torch.from_numpy(mel_db).unsqueeze(0).unsqueeze(0)   # (1,1,H,W)
+    mel_db = torch.from_numpy(mel_db).unsqueeze(0).unsqueeze(0)  
     return mel_db
-
 
 # ----- Prediction function -----
 def predict(audio_path):
@@ -34,7 +32,6 @@ def predict(audio_path):
         label = "REAL" if cls.item() == 0 else "FAKE"
 
         return label, round(confidence.item() * 100, 2)
-
 
 # ----- CLI -----
 if __name__ == "__main__":

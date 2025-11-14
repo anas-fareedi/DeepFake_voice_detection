@@ -1,8 +1,16 @@
-fastapi == 0.117.1
-uvicorn == 0.37.0
-librosa == 0.11.0
-numpy == 1.26.4
-torch == 2.0.1
-torchvision == 0.15.2
-soundfile == 0.13.1
-python-multipart == 0.0.20
+# fastapi == 0.117.1
+# uvicorn == 0.37.0
+# librosa == 0.11.0
+# numpy == 1.26.4
+# torch == 2.0.1
+# torchvision == 0.15.2
+# soundfile == 0.13.1
+# python-multipart == 0.0.20
+fastapi
+uvicorn[standard]
+torch       
+torchvision
+librosa
+soundfile
+numpy
+python-multipart

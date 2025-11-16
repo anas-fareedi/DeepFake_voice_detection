@@ -39,10 +39,9 @@ Features
 Tech stack
 ----------
 List the primary languages, frameworks, and major libraries used:
-- Language: e.g., JavaScript/TypeScript, Python, Go, Rust
-- Web framework (if any): e.g., Express, FastAPI, Gin
-- Database (if any): e.g., Postgres, MongoDB
-- Other: Docker, Kubernetes, GitHub Actions, etc.
+- Language: e.g., Python 
+- Web framework :  FastAPI
+- Other: Docker
 
 Requirements
 ------------

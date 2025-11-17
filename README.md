@@ -6,6 +6,7 @@ research chat for info : https://gemini.google.com/share/b67650a35c9d
 
 with team members ANSHUL VERMA and ANIRUDH RATURI
 
+------
 Badges
 - CI: [![CI](https://img.shields.io/badge/ci-pending-lightgrey)]()
 - License: [![License](https://img.shields.io/badge/license-MIT-blue)]()

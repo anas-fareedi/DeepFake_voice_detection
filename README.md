@@ -2,6 +2,8 @@
 
 Make this impactful project by overseeing the current scenario related to ai generated voice fraud 
 
+frontend_url = https://voice-sentinel-scan-gysavqtbj.vercel.app/
+
 research chat for info : https://gemini.google.com/share/b67650a35c9d 
 
 with team members ANSHUL VERMA and ANIRUDH RATURI
@@ -29,7 +31,6 @@ Table of contents
 
 About
 -----
-A concise paragraph describing the repository's purpose, intended users, and high-level goals. Replace this paragraph with 2–3 sentences specific to your project.
 
 Features
 --------

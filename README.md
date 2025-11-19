@@ -46,7 +46,6 @@ List the primary languages, frameworks, and major libraries used:
 Requirements
 ------------
 - Git >= 2.0
-- Node >= 18 (if Node project) OR Python >= 3.9 (if Python project) OR Go >= 1.20, etc.
 - Docker (optional, if Docker support provided)
 - Any other system dependencies or tools
 

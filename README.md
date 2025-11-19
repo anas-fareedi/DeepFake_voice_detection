@@ -34,9 +34,7 @@ About
 
 Features
 --------
-- Feature 1 — short phrase
-- Feature 2 — short phrase
-- Feature 3 — short phrase
+- Feature 1
 
 Tech stack
 ----------

@@ -39,7 +39,8 @@ Features
 Tech stack
 ----------
 List the primary languages, frameworks, and major libraries used:
-- Language: e.g., Python 
+- Language: Python
+- Libraries : Librosa , Pytorch 
 - Web framework :  FastAPI
 - Other: Docker
 

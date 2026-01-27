@@ -34,9 +34,58 @@ Table of contents
 About
 -----
 
+**DeepFake Voice Detection** is an AI-powered solution designed to combat the growing threat of AI-generated voice fraud and deepfake audio scams. As synthetic voice technology becomes increasingly sophisticated and accessible, malicious actors can impersonate individuals with alarming accuracy, leading to fraud, misinformation, and identity theft.
+
+This project leverages deep learning and audio signal processing to detect whether a given voice recording is authentic or AI-generated. Built with a CNN-based architecture using EfficientNet-B0 and mel-spectrogram analysis, the system achieves reliable classification of real vs. fake audio samples.
+
+The solution includes:
+- A **FastAPI backend** for audio processing and inference
+- A **web frontend** ([Voice Sentinel Scan](https://voice-sentinel-scan.vercel.app/)) for easy audio upload and analysis
+- Docker support for streamlined deployment
+- Pre-trained model for immediate detection capability
+
+**Use cases:**
+- Verifying authenticity of voice messages and recordings
+- Protecting against phone scam attacks using voice cloning
+- Media forensics and fact-checking
+- Authentication systems requiring voice verification
+- Organizational security against social engineering attacks
+
 Features
 --------
-- Feature 1
+
+### Core Detection Capabilities
+- **Real-time Audio Analysis**: Upload audio files in multiple formats (WAV, MP3, WebM, M4A) and receive instant deepfake predictions
+- **High-Accuracy Classification**: CNN-based model trained on mel-spectrogram features to distinguish real from synthetic voices
+- **Confidence Scoring**: Provides percentage-based confidence levels alongside binary REAL/FAKE predictions
+
+### Audio Processing Pipeline
+- **Multi-format Support**: Automatic audio decoding using FFmpeg to handle various input formats
+- **Standardized Preprocessing**: Converts all audio to 16kHz mono for consistent analysis
+- **Mel-Spectrogram Extraction**: Generates 128-band mel-spectrograms for feature representation
+- **Fixed-length Processing**: Normalizes audio clips to 3-second segments for model input
+
+### Machine Learning Architecture
+- **EfficientNet-B0 Backbone**: Transfer learning from ImageNet for robust feature extraction from spectrograms
+- **Custom Binary Classifier**: Fine-tuned final layers for deepfake detection task
+- **PyTorch Framework**: Built on industry-standard deep learning library for flexibility and performance
+
+### API & Integration
+- **RESTful FastAPI Endpoint**: `/predict` endpoint accepts audio uploads and returns JSON predictions
+- **CORS Enabled**: Ready for frontend integration from any origin
+- **Lightweight Inference**: CPU-optimized model loading for cost-effective deployment
+- **Docker Containerization**: Pre-configured Dockerfile for easy deployment to cloud platforms
+
+### Development Tools
+- **Training Pipeline**: Complete scripts for dataset preprocessing, mel-spectrogram generation, and model training
+- **Modular Architecture**: Separated components for preprocessing, training, and inference
+- **CLI Prediction Tool**: Command-line interface for batch processing and testing
+- **Test Audio Samples**: Included test cases for validation
+
+### Production Ready
+- **Web Interface**: User-friendly frontend deployed at [voice-sentinel-scan.vercel.app](https://voice-sentinel-scan.vercel.app/)
+- **Scalable Backend**: FastAPI ensures high-performance concurrent request handling
+- **Environment Flexibility**: Configurable for local development or cloud deployment
 
 Tech stack
 ----------

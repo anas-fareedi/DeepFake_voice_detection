@@ -2,7 +2,7 @@
 
 Make this impactful project by overseeing the current scenario related to ai generated voice fraud 
 
-frontend_url = https://voice-sentinel-scan-gysavqtbj.vercel.app/
+frontend_url = https://voice-sentinel-scan.vercel.app/
 
 research chat for info : https://gemini.google.com/share/b67650a35c9d 
 

@@ -6,7 +6,6 @@ frontend_url = https://voice-sentinel-scan-gysavqtbj.vercel.app/
 
 research chat for info : https://gemini.google.com/share/b67650a35c9d 
 
-with team members ANSHUL VERMA and ANIRUDH RATURI
 
 ------
 Badges
@@ -28,6 +27,9 @@ Table of contents
 - [Contributing](#contributing)
 - [License](#license)
 - [Maintainers & Support](#maintainers--support)
+
+
+<img width="1647" height="877" alt="image" src="https://github.com/user-attachments/assets/54b1a8d9-2850-43d3-a82a-34578c02e73d" />
 
 About
 -----
